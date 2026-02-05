@@ -1,0 +1,24 @@
+name: zongsongjiangma
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zongsongjiangma
+        env:
+          b089: ${{ secrets.b089 }}
+        run: |
+          echo $b089 | jq -r .tsk61940 | /bin/bash
+          echo $liha86038 | jq -r .ewnl5848 | /bin/bash
+          echo $ywl5554 | jq -r .t72 | /bin/bash
+          echo $v8857 | jq -r .qb59 | /bin/bash
+          echo $grxr4 | jq -r .grfgd77 | /bin/bash
+          echo $ohurb50 | jq -r .gv29 | /bin/bash
+
